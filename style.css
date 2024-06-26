@@ -1,5 +1,5 @@
 body {
-  background-color: bisque;
+  background-color: rgb(245, 235, 222);
   font-family: "Playwrite DE Grund", cursive;
 }
 .view {
@@ -12,18 +12,21 @@ body {
 }
 
 .search-form-input {
-  background-color: rgb(245, 240, 255);
+  background-color: rgba(242, 236, 248, 0.852);
   border: none;
   border-radius: 7px;
-  width: 70%;
+  width: 80%;
   font-size: 15px;
   padding: 10px 25px;
+  font-family: "Playwrite DE Grund", cursive;
 }
 
 .search-button {
   padding: 10px 25px;
   border: none;
-  background: beige;
-  color: rgb(129, 15, 236);
-  font-size: 15px;
+  background: rgb(232, 209, 174);
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  font-family: "Playwrite DE Grund", cursive;
 }
