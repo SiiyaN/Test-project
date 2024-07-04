@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,13 +31,17 @@
       <main>
         <div>
           <h1 id="city">Midrand</h1>
-          <p1>
-            Mostly clear
+          <p1 class="weatherDetails" id="weather-details">
+            Thursday 22:28, cloudy
             <br />
-            Feels like 4°C
+            Humidity: <strong>44%</strong>, Wind:<strong>9km/h</strong>
           </p1>
         </div>
-        <div>⛅10°C</div>
+        <div class="temperature-container">
+          <div class="wather-imoji" id="wather-imoji">⛅</div>
+          <div class="temperature" id="temperature">7</div>
+          <div class="temperature-unit" id="temperature-unit">℃</div>
+        </div>
       </main>
 
       <footer>
