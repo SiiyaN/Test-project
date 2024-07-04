@@ -10,16 +10,17 @@
       rel="stylesheet"
     />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="view">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="What is your city?"
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
@@ -27,7 +28,7 @@
 
       <main>
         <div>
-          <h1>Midrand</h1>
+          <h1 id="city">Midrand</h1>
           <p1>
             Mostly clear
             <br />
@@ -44,5 +45,6 @@
         <a href=" " target="_blank">hosted on Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
