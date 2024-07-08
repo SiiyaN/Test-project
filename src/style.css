@@ -53,12 +53,12 @@ a {
 
 .city {
   margin: 0;
-  font-size: 2;
+  font-size: 30;
   line-height: 45px;
 }
 
 strong {
-  color: red;
+  color: rgb(208, 40, 175);
 }
 
 .weatherDetails {
@@ -73,4 +73,23 @@ strong {
 
 main {
   padding: 20px 0;
+}
+
+.temperature-container {
+  display: flex;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.weather-imoji {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.temperature-unit {
+  margin-top: 15px;
 }
