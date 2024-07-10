@@ -5,7 +5,7 @@ function currentWeather(response) {
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
-  let timeEmement = document.querySelector("#time");
+  let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
   temperatureElement.innerHTML = Math.round(temperature);
@@ -13,13 +13,10 @@ function currentWeather(response) {
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed} km/h`;
-  timeEmement.innerHTML = formatDate(date);
+  timeElement.innerHTML = `${day} ${hours}:${minutes}`;
 }
 
 function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
-  let day = days[date.getDay()];
   let days = [
     "Sunday",
     "Monday",
@@ -29,6 +26,18 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let day = days[date.getDay()];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
 
   return `${day} ${hours}:${minutes}`;
 }
