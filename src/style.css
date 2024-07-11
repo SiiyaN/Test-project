@@ -83,8 +83,9 @@ main {
 }
 
 .weather-imoji {
-  font-size: 35px;
-  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+  margin-top: 17px;
 }
 
 .temperature-unit {
