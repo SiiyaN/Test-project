@@ -31,6 +31,10 @@ body {
   font-family: "Playwrite DE Grund", cursive;
 }
 
+.search-button:hover {
+  cursor: pointer;
+}
+
 header {
   border-bottom: 1px solid rgb(245, 235, 222);
   padding: 0 0 30px;
