@@ -109,8 +109,10 @@ main {
 }
 
 .forecast-imoji {
-  font-size: 35px;
-  text-align: center;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
 }
 
 .forecast-temperatures {
