@@ -95,3 +95,30 @@ main {
 .temperature-unit {
   margin-top: 15px;
 }
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.week-day {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(197, 174, 140);
+  line-height: 20px;
+}
+
+.forecast-imoji {
+  font-size: 35px;
+  text-align: center;
+}
+
+.forecast-temperatures {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.forecast-temp {
+  padding: 0 7px;
+}
