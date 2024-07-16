@@ -59,5 +59,27 @@ function search(event) {
   citySearch(searchInput.value);
 }
 
+function forecastDisplay() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="forecast-day">
+            <div class="week-day">${day}</div>
+            <div class="forecast-imoji">🌧️</div>
+            <div class="forecast-temperatures">
+              <div class="forecast-temp"><strong>10°</strong></div>
+              <div class="forecast-temp">4°</div>
+            </div>
+            </div>
+            `;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", search);
+
+forecastDisplay();
