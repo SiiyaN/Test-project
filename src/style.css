@@ -73,7 +73,7 @@ strong {
 }
 
 main {
-  padding: 20px 0;
+  padding: 18px 0;
 }
 
 .temperature-container {
@@ -96,20 +96,18 @@ main {
   margin-top: 15px;
 }
 
-.forecast {
+.forecast-data {
   display: flex;
   justify-content: space-around;
   margin: 25px;
-  text-align: center;
 }
 
 .forecast-day {
   text-align: center;
-  display: flex;
+  margin-bottom: 0 10px;
 }
 .week-day {
   text-align: center;
-
   font-size: 16px;
   color: rgb(197, 174, 140);
   line-height: 20px;
@@ -119,13 +117,14 @@ main {
   width: 60px;
   height: 60px;
   display: block;
-  margin: 0 7px;
+  margin: 0 auto;
 }
 
 .forecast-temperatures {
   text-align: center;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .forecast-temp {
