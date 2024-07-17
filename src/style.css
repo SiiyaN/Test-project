@@ -99,20 +99,27 @@ main {
 .forecast {
   display: flex;
   justify-content: space-around;
-  margin: 20px;
+  margin: 25px;
+  text-align: center;
+}
+
+.forecast-day {
+  text-align: center;
+  display: flex;
 }
 .week-day {
   text-align: center;
+
   font-size: 16px;
   color: rgb(197, 174, 140);
   line-height: 20px;
 }
 
 .forecast-imoji {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   display: block;
-  margin: 0 auto;
+  margin: 0 7px;
 }
 
 .forecast-temperatures {
@@ -122,5 +129,5 @@ main {
 }
 
 .forecast-temp {
-  padding: 0 7px;
+  padding: 0 10px;
 }
